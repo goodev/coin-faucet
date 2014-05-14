@@ -6,7 +6,7 @@
   .header-content
     %h1.title= title
     %p.intro
-      On this site you can give or receive free #{currency.pluralize}
+      On this site you can give or receive free <a href="#{ FaucetConfig["coin_url"] }"> #{currency.pluralize} </a> .
     - if @state.testnet?
       .testnet-warning
         .content #{currency.pluralize.capitalize} are not real coins. They are only useful for developpers and have absolutely no monetary value!
