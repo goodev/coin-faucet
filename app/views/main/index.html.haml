@@ -6,7 +6,7 @@
   .header-content
     %h1.title= title
     %p.intro
-      On this site you can give or receive free <a href="#{ FaucetConfig["coin_url"] }"> #{currency.pluralize} </a> .
+      On this site you can give or receive free <a target="_blank" href="#{ FaucetConfig["coin_url"] }"> #{currency.pluralize} </a> .
     - if @state.testnet?
       .testnet-warning
         .content #{currency.pluralize.capitalize} are not real coins. They are only useful for developpers and have absolutely no monetary value!
@@ -93,7 +93,5 @@
 %footer#footer
   .content
     .links
-      = link_to "Project page", "https://github.com/sigmike/peercoin-faucet"
+      = link_to "All AltCoin Faucets", "http://forfree.cc"
 
-  %a.github-ribbon{:href => "https://github.com/sigmike/peercoin-faucet"}
-    = image_tag "forkme_right_gray_6d6d6d.png", alt: "Fork me on GitHub", style: "position: absolute; top: 0; right: 0; border: 0;"
