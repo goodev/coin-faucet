@@ -48,7 +48,7 @@ gem 'haml-rails'
 gem 'therubyracer'
 gem 'secret_token_replacer', :git => 'git://github.com/digineo/secret_token_replacer.git'
 gem 'pg', group: :postgresql
-gem 'mysql', group: :mysql
+gem 'mysql2', group: :mysql
 gem 'whenever'
 gem 'foundation-rails'
 gem "recaptcha", :require => "recaptcha/rails"
